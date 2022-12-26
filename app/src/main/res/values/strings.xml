@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GIVIT</string>
+    <string name="app_slogan">One\'s Trash Another\'s Treasure</string>
+    <string name="loading_screen_image">Loading Screen Image</string>
+
+    <string name="copyrights">copyrights</string>
+    <string name="description_para">What you throw away</string>
+    <string name="description_para2">will mean the world to another</string>
+    <string name="landing_page_image">Landing Page Image</string>
+    <string name="sign_in_text">Already Have an Account ?</string>
+    <string name="sign_in_button"><u>Sign In</u>.</string>
+</resources>
