@@ -15,6 +15,21 @@ public class CategoriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
+
+        //Identify the buttons
+        FrameLayout btnFood = findViewById(R.id.frameFood);
+
+        btnFood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent categoryIntent = new Intent(CategoriesActivity.this, CategoryActivity.class);
+                startActivity(categoryIntent);
+            }
+        });
 
     }
 }
