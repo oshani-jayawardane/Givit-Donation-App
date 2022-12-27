@@ -1,6 +1,7 @@
 package com.example.givitapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.ActionBar;
 
 import android.os.Bundle;
 import android.content.Intent;
@@ -25,6 +26,12 @@ public class SignUpActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.hide();
+        }
+
         email = findViewById(R.id.emailText);
         password = findViewById(R.id.passwordText);
         firstName = findViewById(R.id.firstNameText);
@@ -69,13 +76,12 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
 
-//        login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(Home2Activity.this, login.class));
-//            }
-//        });
-//    }
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SignUpActivity.this, SignInActivity.class));
+            }
+        });
     }
 
     private Boolean validate (User user){
