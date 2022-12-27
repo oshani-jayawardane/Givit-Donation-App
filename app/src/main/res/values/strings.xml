@@ -23,4 +23,7 @@
     <string name="give_life_another_chance">Give life another chance</string>
     <string name="browse_for">Browse For</string>
 
+    <string name="email_hint">Enter Email</string>
+    <string name="password_hint">Enter Password</string>
+
 </resources>
