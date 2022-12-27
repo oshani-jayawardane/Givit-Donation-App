@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 public class CategoryActivity extends AppCompatActivity {
 
@@ -31,6 +32,10 @@ public class CategoryActivity extends AppCompatActivity {
                 startActivity(categoryIntent);
             }
         });
+
+        //Identify the text view
+        TextView categoryName = findViewById(R.id.nameCategory);
+        categoryName.setText(getIntent().getStringExtra("category_name"));
 
     }
 }

@@ -64,7 +64,7 @@
                     android:fontFamily="@font/nunito_bold"
                     android:text="@string/browse_for"
                     android:textColor="#000000"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,11 +72,11 @@
                     android:id="@+id/nameCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:fontFamily="@font/nunito_extrabold"
                     android:text="@string/category_name"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
+                    android:textColor="@color/primary_green"
+                    android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="@+id/txtBrowse"
                     app:layout_constraintStart_toEndOf="@+id/txtBrowse"
                     app:layout_constraintTop_toTopOf="@+id/txtBrowse" />
