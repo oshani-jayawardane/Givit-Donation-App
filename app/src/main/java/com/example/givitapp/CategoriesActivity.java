@@ -6,26 +6,27 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.FrameLayout;
 
-public class SignInActivity extends AppCompatActivity {
+public class CategoriesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_categories);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.hide();
         }
 
-        Button btnSignIn = findViewById(R.id.btnSignIn);
+        //Identify the buttons
+        FrameLayout btnFood = findViewById(R.id.frameFood);
 
-        btnSignIn.setOnClickListener(new View.OnClickListener() {
+        btnFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent categoryIntent = new Intent(SignInActivity.this, HomeActivity.class);
+                Intent categoryIntent = new Intent(CategoriesActivity.this, CategoryActivity.class);
                 startActivity(categoryIntent);
             }
         });

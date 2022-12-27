@@ -9,4 +9,18 @@
     <string name="landing_page_image">Landing Page Image</string>
     <string name="sign_in_text">Already Have an Account ?</string>
     <string name="sign_in_button"><u>Sign In</u>.</string>
+
+    <string name="food_and_groceries">Food and Groceries</string>
+    <string name="kitchen_utensils">Kitchen Utensils</string>
+    <string name="furniture">Furniture</string>
+    <string name="home_accessories">Home Accessories</string>
+    <string name="cloths_and_accessories">Cloths and Accessories</string>
+    <string name="books_and_stationery">Books and Stationery</string>
+    <string name="electronic_items">Electronic Items</string>
+    <string name="sports_items">Sports Items</string>
+    <string name="musical_instruments">Musical Instruments</string>
+    <string name="adopt_a_pet">Adopt a Pet !</string>
+    <string name="give_life_another_chance">Give life another chance</string>
+    <string name="browse_for">Browse For</string>
+
 </resources>
