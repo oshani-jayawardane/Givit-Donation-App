@@ -1,7 +1,7 @@
 package com.example.givitapp;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.ActionBar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import com.example.givitapp.signup.UserDataBase;
 public class SignInActivity extends AppCompatActivity {
 
     EditText email, password;
-    Button login;
+    Button btnSignIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +31,9 @@ public class SignInActivity extends AppCompatActivity {
 
         email = findViewById(R.id.emailText);
         password = findViewById(R.id.passwordText);
-        Button btnSignIn = findViewById(R.id.btnSignin);
+        btnSignIn = findViewById(R.id.btnSignin);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String userEmailText = email.getText().toString();
