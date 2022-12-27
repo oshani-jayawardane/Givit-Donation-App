@@ -21,9 +21,9 @@ public class CategoriesActivity extends AppCompatActivity {
         }
 
         //Identify the buttons
-        FrameLayout btnFood = findViewById(R.id.frameFood);
+        FrameLayout btnCategory = findViewById(R.id.frameFood);
 
-        btnFood.setOnClickListener(new View.OnClickListener() {
+        btnCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent categoryIntent = new Intent(CategoriesActivity.this, CategoryActivity.class);

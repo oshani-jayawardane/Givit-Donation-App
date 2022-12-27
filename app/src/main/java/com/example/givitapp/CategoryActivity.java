@@ -2,6 +2,7 @@ package com.example.givitapp;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.os.Bundle;
 
@@ -16,6 +17,9 @@ public class CategoryActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
+
+        CardView cardView = findViewById(R.id.itemCard);
+        cardView.setRadius(24);
 
     }
 }
