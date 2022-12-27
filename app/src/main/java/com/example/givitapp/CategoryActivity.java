@@ -4,7 +4,10 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.FrameLayout;
 
 public class CategoryActivity extends AppCompatActivity {
 
@@ -18,8 +21,16 @@ public class CategoryActivity extends AppCompatActivity {
             actionBar.hide();
         }
 
-        CardView cardView = findViewById(R.id.itemCard);
-        cardView.setRadius(24);
+        //Identify the cards
+        FrameLayout itemCard = findViewById(R.id.itemCard);
+
+        itemCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent categoryIntent = new Intent(CategoryActivity.this, RequestActivity.class);
+                startActivity(categoryIntent);
+            }
+        });
 
     }
 }

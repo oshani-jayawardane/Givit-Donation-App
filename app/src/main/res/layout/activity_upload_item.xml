@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UploadActivity">
+    tools:context=".UploadItemActivity">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
 
@@ -30,7 +30,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="32dp"
                     android:fontFamily="@font/nunito_black"
                     android:text="@string/app_name"
                     android:textColor="#17706E"
@@ -263,10 +263,10 @@
                     android:layout_marginBottom="16dp"
                     android:fontFamily="@font/nunito_semibold"
                     android:text="Upload"
-                    android:textColor="#000000"
-                    android:textSize="14sp"
                     android:textAllCaps="false"
-                    app:backgroundTint="@color/primary_orange"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:backgroundTint="#BFFB9036"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

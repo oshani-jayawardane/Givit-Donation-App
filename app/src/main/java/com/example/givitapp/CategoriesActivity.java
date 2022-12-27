@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import java.lang.reflect.Array;
+
 public class CategoriesActivity extends AppCompatActivity {
 
     @Override
@@ -20,8 +22,13 @@ public class CategoriesActivity extends AppCompatActivity {
             actionBar.hide();
         }
 
+//        String[] categories = {"Food and Groceries", "Kitchen Utensils", "Furniture", "Home Accessories", "Cloths and Accessories", "Books and Stationery", "Electronic Items", "Sports Items", "Musical Instruments", "Pets"};
+//
+//        for (String category:categories) {
+//
+//        }
         //Identify the buttons
-        FrameLayout btnCategory = findViewById(R.id.frameFood);
+        FrameLayout btnCategory = findViewById(R.id.frame1);
 
         btnCategory.setOnClickListener(new View.OnClickListener() {
             @Override
