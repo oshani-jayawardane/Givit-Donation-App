@@ -10,6 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GivitApp">
         <activity
+            android:name=".MyUploadActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MapsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/Theme.GivitApp.Fullscreen" />
+        <activity
             android:name=".Home2Activity"
             android:exported="false" />
         <activity

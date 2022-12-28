@@ -25,5 +25,12 @@
 
     <string name="email_hint">Enter Email</string>
     <string name="password_hint">Enter Password</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="givit">GIVIT</string>
+    <string name="thank_you_for_being_a_generous_giver">Thank_you_for_being_a_generous_giver</string>
+    <string name="back">Back</string>
+    <string name="todo">TODO</string>
 
 </resources>
