@@ -10,6 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GivitApp">
         <activity
+            android:name=".MapActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MyUploadActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AuthenticationActivity"
             android:exported="false">
             <meta-data
