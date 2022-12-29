@@ -49,6 +49,9 @@ public class SignInActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             User user = userDao.loginUser(userEmailText,passwordText);
+                            String firstName = user.getFirstName();
+                            String userEmail = user.getUserEmail();
+                            String userNumber = user.getMobNumber();
                             if(user == null){
                                 runOnUiThread(new Runnable() {
                                     @Override
@@ -57,6 +60,14 @@ public class SignInActivity extends AppCompatActivity {
                                     }
                                 });
                             }else{
+                                Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                                intent.putExtra("name", firstName);
+                                intent.putExtra("email", userEmail);
+                                intent.putExtra("number", userNumber);
+                                Bundle bundle = new Bundle();
+                                bundle.putSerializable("user", user);
+                                intent.putExtras(bundle);
+                                startActivity(intent);
                                 startActivity(new Intent(SignInActivity.this, HomeActivity.class));
                             }
                         }
