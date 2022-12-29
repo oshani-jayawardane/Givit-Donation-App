@@ -64,32 +64,44 @@
                     android:fontFamily="@font/nunito_bold"
                     android:text="@string/browse_for"
                     android:textColor="#000000"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <TextView
+                    android:id="@+id/nameCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/nunito_extrabold"
+                    android:text="@string/category_name"
+                    android:textColor="@color/primary_green"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtBrowse"
+                    app:layout_constraintStart_toEndOf="@+id/txtBrowse"
+                    app:layout_constraintTop_toTopOf="@+id/txtBrowse" />
+
                 <FrameLayout
-                    android:id="@+id/frameFood"
+                    android:id="@+id/itemCard"
                     android:layout_width="0dp"
                     android:layout_height="200dp"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="32dp"
+                    android:layout_marginTop="24dp"
                     android:layout_marginEnd="24dp"
-                    android:background="#F2F1EC"
+                    android:background="@drawable/frame_layout_design"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.489"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtBrowse">
+                    app:layout_constraintTop_toBottomOf="@id/txtBrowse">
 
                     <ImageView
-                        android:id="@+id/imgCategory"
+                        android:id="@+id/itemImage"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:layout_gravity="center_horizontal|top"
-                        app:srcCompat="@drawable/furniture_two" />
+                        app:srcCompat="@drawable/book" />
 
                     <TextView
-                        android:id="@+id/titleCategory"
+                        android:id="@+id/itmTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|left"
@@ -101,7 +113,7 @@
                         android:textSize="16sp" />
 
                     <TextView
-                        android:id="@+id/descriptionCategory"
+                        android:id="@+id/itmDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|left"
@@ -113,19 +125,6 @@
                         android:textSize="12sp" />
 
                 </FrameLayout>
-
-                <TextView
-                    android:id="@+id/nameCategory"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:fontFamily="@font/nunito_extrabold"
-                    android:text="Category Name"
-                    android:textColor="#000000"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txtBrowse"
-                    app:layout_constraintStart_toEndOf="@+id/txtBrowse"
-                    app:layout_constraintTop_toTopOf="@+id/txtBrowse" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

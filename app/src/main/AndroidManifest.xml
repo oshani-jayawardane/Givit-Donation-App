@@ -13,6 +13,12 @@
             android:name=".Home2Activity"
             android:exported="false" />
         <activity
+            android:name=".UserItemViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RequestActivity"
+            android:exported="false" />
+        <activity
             android:name=".CategoryActivity"
             android:exported="false" />
         <activity
