@@ -29,16 +29,16 @@ public class LandingActivity extends AppCompatActivity {
         signupButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent categoryIntent = new Intent(LandingActivity.this, SignUpActivity.class);
-                startActivity(categoryIntent);
+                Intent signupIntent = new Intent(LandingActivity.this, SignUpActivity.class);
+                startActivity(signupIntent);
             }
         });
 
         signinButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent categoryIntent = new Intent(LandingActivity.this, SignInActivity.class);
-                startActivity(categoryIntent);
+                Intent signinIntent = new Intent(LandingActivity.this, SignInActivity.class);
+                startActivity(signinIntent);
             }
         });
     }

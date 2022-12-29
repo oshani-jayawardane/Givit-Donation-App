@@ -9,7 +9,7 @@
     <string name="landing_page_image">Landing Page Image</string>
     <string name="sign_in_text">Already Have an Account ?</string>
     <string name="sign_in_button"><u>Sign In</u>.</string>
-
+    <string name="sign_up_button"><u>Sign Up</u>.</string>
     <string name="food_and_groceries">Food and Groceries</string>
     <string name="kitchen_utensils">Kitchen Utensils</string>
     <string name="furniture">Furniture</string>
@@ -31,5 +31,8 @@
     <string name="description">Description</string>
     <string name="item_title">Item title</string>
     <string name="item">Item</string>
+
+    <string name="email_hint">Enter Email</string>
+    <string name="password_hint">Enter Password</string>
 
 </resources>
