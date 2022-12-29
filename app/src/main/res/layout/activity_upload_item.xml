@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadItemActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="391dp"
+            android:layout_height="720dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="2dp"
+            android:contentDescription="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/volunteering_background_5">
+
+                <TextView
+                    android:id="@+id/txtLogoUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/nunito_black"
+                    android:text="@string/app_name"
+                    android:textColor="#17706E"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/imgplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:contentDescription="@string/add_icon"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtHeadingUpload"
+                    app:srcCompat="@android:drawable/ic_input_add"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/txtHeadingUpload"
+                    android:layout_width="100dp"
+                    android:layout_height="59dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="32dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="end"
+                    android:text="@string/txtUploadHeading"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAddImage"
+                    android:layout_width="114dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="132dp"
+                    android:layout_marginTop="84dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="@string/txtUploadHeadingTwo"
+                    android:textColor="#000000"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgPlusIcon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="84dp"
+                    android:layout_marginTop="48dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLogoUpload"
+                    app:srcCompat="@drawable/plus" />
+
+                <ImageView
+                    android:id="@+id/imgUploadIcon"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#00F2F1EC"
+                    android:contentDescription="@string/upload_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLogoUpload"
+                    tools:srcCompat="@drawable/add_image" />
+
+                <TextView
+                    android:id="@+id/txtUploadItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Item"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgUploadIcon" />
+
+                <EditText
+                    android:id="@+id/editTextItemName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Item title"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUploadItem" />
+
+                <TextView
+                    android:id="@+id/txtUploadDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#29FFFFFF"
+                    android:fontFamily="@font/nunito"
+                    android:text="Description"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextItemName" />
+
+                <EditText
+                    android:id="@+id/editTextItemDescription"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="start|top"
+                    android:hint="Add a brief description about your item"
+                    android:inputType="textMultiLine"
+                    android:minHeight="48dp"
+                    android:textColor="#1E1C1C"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUploadDescription" />
+
+                <TextView
+                    android:id="@+id/txtUploadCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Category"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextItemDescription" />
+
+                <EditText
+                    android:id="@+id/editTextItemCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Select Item Category"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:text="Select item category"
+                    android:textColor="#1E1C1C"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUploadCategory" />
+
+                <TextView
+                    android:id="@+id/txtUploadQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Quantity"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextItemCategory" />
+
+                <EditText
+                    android:id="@+id/editTextItemQuantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edit_text_background"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito"
+                    android:hint="Item Quantity"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:textColor="#1E1C1C"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUploadQuantity" />
+
+                <TextView
+                    android:id="@+id/txtUploadLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nunito"
+                    android:text="Pick-up Location"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextItemQuantity" />
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="0dp"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtUploadLocation" />
+
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:backgroundTint="#BFFB9036"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mapView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

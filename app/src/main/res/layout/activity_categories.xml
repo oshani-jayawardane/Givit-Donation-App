@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#D9FB7813">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:fontFamily="@font/nunito_black"
+            android:text="@string/app_name"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="10dp"
+            android:background="#FFFFFF">
+
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+
+
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".CategoryActivity">
+
+            <TextView
+                android:id="@+id/txtBrowse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/browse_for"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:id="@+id/frame1"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:elevation="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtBrowse">
+
+                <ImageView
+                    android:id="@+id/imageIcon1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_food_groceries"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/CategoryText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/food_and_groceries"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame2"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:elevation="8dp"
+                android:clickable="true"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame1">
+
+                <ImageView
+                    android:id="@+id/imageIcon2"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_kitchen_utensils" />
+
+                <TextView
+                    android:id="@+id/CategoryText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/kitchen_utensils"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame3"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame2">
+
+                <ImageView
+                    android:id="@+id/imageIcon3"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_furniture" />
+
+                <TextView
+                    android:id="@+id/CategoryText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/furniture"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame4"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame3">
+
+                <ImageView
+                    android:id="@+id/imageIcon4"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_home_items"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/CategoryText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/home_accessories"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame5"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame4">
+
+                <ImageView
+                    android:id="@+id/imageIcon5"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_cloths"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/CategoryText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/cloths_and_accessories"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame6"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame5">
+
+                <ImageView
+                    android:id="@+id/imageIcon6"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_books" />
+
+                <TextView
+                    android:id="@+id/CategoryText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/books_and_stationery"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame7"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame6">
+
+                <ImageView
+                    android:id="@+id/imageIcon7"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_electronics" />
+
+                <TextView
+                    android:id="@+id/CategoryText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/electronic_items"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame8"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame7">
+
+                <ImageView
+                    android:id="@+id/imageIcon8"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_sports" />
+
+                <TextView
+                    android:id="@+id/CategoryText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/sports_items"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame9"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/frame_layout_design"
+                android:clickable="true"
+                android:elevation="8dp"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame8">
+
+                <ImageView
+                    android:id="@+id/imageIcon9"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="36dp"
+                    android:src="@drawable/icon_music" />
+
+                <TextView
+                    android:id="@+id/CategoryText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="100dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/musical_instruments"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame10"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/frame_layout_design_green"
+                android:elevation="8dp"
+                android:clickable="true"
+                android:onClick="onFrameLayoutClick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frame9">
+
+                <TextView
+                    android:id="@+id/CategoryText10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/give_life_another_chance"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/CategoryText11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="48dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="@string/adopt_a_pet"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/imageIcon10"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="36dp"
+                    android:src="@drawable/icon_dog" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
