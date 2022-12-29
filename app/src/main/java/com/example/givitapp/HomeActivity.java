@@ -41,13 +41,13 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         // receive Intents
-//        Intent intent = getIntent();
-//        String name = intent.getStringExtra("name");
-//        String email = intent.getStringExtra("email");
-//        String number = intent.getStringExtra("number");
-//        Bundle bundle = intent.getExtras();
-//        User user = (User) bundle.getSerializable("user");
-//        Namedisplay.setText(name);
+        Intent intent = getIntent();
+        String name = intent.getStringExtra("name");
+        String email = intent.getStringExtra("email");
+        String number = intent.getStringExtra("number");
+        Bundle bundle = intent.getExtras();
+        User user = (User) bundle.getSerializable("user");
+        Namedisplay.setText(name);
 
 
         final FrameLayout[] btnCategory = new FrameLayout[10];
