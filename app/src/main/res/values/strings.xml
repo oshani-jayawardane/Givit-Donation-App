@@ -24,5 +24,6 @@
     <string name="browse_for">Browse For</string>
     <string name="givit">GIVIT</string>
     <string name="thank_you_for_being_a_generous_giver">thank_you_for_being_a_generous_giver</string>
+    <string name="title_activity_maps" />
 
 </resources>
