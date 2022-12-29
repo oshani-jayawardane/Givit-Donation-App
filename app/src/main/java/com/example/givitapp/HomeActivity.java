@@ -15,7 +15,7 @@ import com.example.givitapp.signup.User;
 public class HomeActivity extends AppCompatActivity {
 
     TextView Namedisplay;
-    Button btnAcc;
+    Button btnAcc, donateButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,15 @@ public class HomeActivity extends AppCompatActivity {
 
         Namedisplay = findViewById(R.id.NameText);
         btnAcc = findViewById(R.id.btnAccount);
+        donateButton = findViewById(R.id.btnDonate);
+
+        donateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent donateIntent = new Intent(HomeActivity.this,UploadItemActivity.class);
+                startActivity(donateIntent);
+            }
+        });
 
         // receive Intents
 //        Intent intent = getIntent();
