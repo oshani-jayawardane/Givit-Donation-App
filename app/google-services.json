@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "321188446770",
+    "firebase_url": "https://chatapplication-c3a5c-default-rtdb.firebaseio.com",
+    "project_id": "chatapplication-c3a5c",
+    "storage_bucket": "chatapplication-c3a5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321188446770:android:b31b3a2e2f86b67504722b",
+        "android_client_info": {
+          "package_name": "com.example.firebasechatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321188446770-ofisqqukbu9tom36rte45icdf8d5aqm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMChVR5w9Bn8q-zBFlN7zvhgaErsyVZgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321188446770-ofisqqukbu9tom36rte45icdf8d5aqm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321188446770:android:bfdf103b0082463104722b",
+        "android_client_info": {
+          "package_name": "com.example.givitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321188446770-ofisqqukbu9tom36rte45icdf8d5aqm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMChVR5w9Bn8q-zBFlN7zvhgaErsyVZgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321188446770-ofisqqukbu9tom36rte45icdf8d5aqm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
