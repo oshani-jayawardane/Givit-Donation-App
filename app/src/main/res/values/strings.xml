@@ -22,5 +22,7 @@
     <string name="adopt_a_pet">Adopt a Pet !</string>
     <string name="give_life_another_chance">Give life another chance</string>
     <string name="browse_for">Browse For</string>
+    <string name="givit">GIVIT</string>
+    <string name="thank_you_for_being_a_generous_giver">thank_you_for_being_a_generous_giver</string>
 
 </resources>
