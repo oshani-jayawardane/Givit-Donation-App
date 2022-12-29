@@ -57,7 +57,7 @@ public class SignInActivity extends AppCompatActivity {
                                     }
                                 });
                             }else{
-                                startActivity(new Intent(SignInActivity.this, Home2Activity.class));
+                                startActivity(new Intent(SignInActivity.this, HomeActivity.class));
                             }
                         }
                     }).start();
