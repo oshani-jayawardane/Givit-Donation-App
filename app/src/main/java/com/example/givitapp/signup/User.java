@@ -8,7 +8,7 @@ import androidx.room.PrimaryKey;
 import java.io.Serializable;
 
 @Entity(tableName = "users")
-public class User{
+public class User implements  Serializable{
 
     @PrimaryKey(autoGenerate = true)
     @NonNull
