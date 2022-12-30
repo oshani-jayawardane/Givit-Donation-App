@@ -50,83 +50,17 @@
             android:layout_height="match_parent"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".CategoryActivity">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/txtBrowse"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginTop="16dp"
-                    android:fontFamily="@font/nunito_bold"
-                    android:text="@string/browse_for"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_view_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
 
-                <TextView
-                    android:id="@+id/nameCategory"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:fontFamily="@font/nunito_extrabold"
-                    android:text="@string/category_name"
-                    android:textColor="@color/primary_green"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txtBrowse"
-                    app:layout_constraintStart_toEndOf="@+id/txtBrowse"
-                    app:layout_constraintTop_toTopOf="@+id/txtBrowse" />
-
-                <FrameLayout
-                    android:id="@+id/itemCard"
-                    android:layout_width="0dp"
-                    android:layout_height="200dp"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginEnd="24dp"
-                    android:background="@drawable/frame_layout_design"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/txtBrowse">
-
-                    <ImageView
-                        android:id="@+id/itemImage"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center_horizontal|top"
-                        app:srcCompat="@drawable/book" />
-
-                    <TextView
-                        android:id="@+id/itmTitle"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|left"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginBottom="24dp"
-                        android:fontFamily="@font/nunito_semibold"
-                        android:text="Wooden dining table"
-                        android:textColor="#000000"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/itmDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="bottom|left"
-                        android:layout_marginLeft="24dp"
-                        android:layout_marginBottom="8dp"
-                        android:fontFamily="@font/nunito"
-                        android:text="Dining table with six chairs wooden...see more"
-                        android:textColor="#000000"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.core.widget.NestedScrollView>
 

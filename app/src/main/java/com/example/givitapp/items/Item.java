@@ -14,7 +14,7 @@ public class Item {
 
     @PrimaryKey(autoGenerate = true)
     @NonNull
-    private int item_id;
+    private int itemId;
     @ColumnInfo(name = "item_name")
     private String itemName;
     @ColumnInfo(name = "item_description")
@@ -28,13 +28,12 @@ public class Item {
 //    private String itemOwner;
 
 
-
-    public int getId() {
-        return item_id;
+    public int getItemId() {
+        return itemId;
     }
 
-    public void setId(int id) {
-        this.item_id = id;
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
     }
 
     public String getItemName() {
@@ -68,6 +67,5 @@ public class Item {
     public void setItemQuantity(int itemQuantity) {
         this.itemQuantity = itemQuantity;
     }
-
 }
 

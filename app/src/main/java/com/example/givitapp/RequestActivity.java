@@ -4,8 +4,17 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
+
+import com.example.givitapp.items.Item;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class RequestActivity extends AppCompatActivity {
+
+    TextView TxtItemName, TxtItemDescription, TxtItemCategory, TxtItemQuantity;
+    private List<Item> itemList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +25,11 @@ public class RequestActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
+
+//        TxtItemName.setText();
+//        TxtItemDescription.setText();
+//        TxtItemCategory.setText();
+//        TxtItemQuantity.setText();
 
     }
 }

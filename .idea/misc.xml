@@ -9,7 +9,7 @@
         <entry key="..\:/GivitApp/app/src/main/res/drawable/frame_layout_design_green.xml" value="0.1" />
         <entry key="..\:/GivitApp/app/src/main/res/drawable/frame_layout_stroke.xml" value="0.1" />
         <entry key="..\:/GivitApp/app/src/main/res/layout/activity_categories.xml" value="0.264" />
-        <entry key="..\:/GivitApp/app/src/main/res/layout/activity_category.xml" value="0.264" />
+        <entry key="..\:/GivitApp/app/src/main/res/layout/activity_category.xml" value="0.21052631578947367" />
         <entry key="..\:/GivitApp/app/src/main/res/layout/activity_edit_upload.xml" value="0.20512820512820512" />
         <entry key="..\:/GivitApp/app/src/main/res/layout/activity_home.xml" value="0.20512820512820512" />
         <entry key="..\:/GivitApp/app/src/main/res/layout/activity_home2.xml" value="0.1594017094017094" />
@@ -21,6 +21,9 @@
         <entry key="..\:/GivitApp/app/src/main/res/layout/activity_upload_item.xml" value="0.2" />
         <entry key="..\:/GivitApp/app/src/main/res/layout/activity_user_account.xml" value="0.20512820512820512" />
         <entry key="..\:/GivitApp/app/src/main/res/layout/activity_user_item_view.xml" value="0.20512820512820512" />
+        <entry key="..\:/GivitApp/app/src/main/res/layout/item_card.xml" value="0.264" />
+        <entry key="..\:/GivitApp/app/src/main/res/layout/temperory.xml" value="0.20521590423257802" />
+        <entry key="..\:/GivitApp/app/src/main/res/layout/temporary.xml" value="0.20521590423257802" />
         <entry key="..\:/University/Semester 7/Mobile App Dev/Givit-Donation-App/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/University/Semester 7/Mobile App Dev/Givit-Donation-App/app/src/main/res/layout/activity_home2.xml" value="0.25416666666666665" />
         <entry key="..\:/University/Semester 7/Mobile App Dev/Givit-Donation-App/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />

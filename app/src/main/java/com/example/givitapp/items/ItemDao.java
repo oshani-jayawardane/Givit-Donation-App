@@ -1,12 +1,14 @@
 package com.example.givitapp.items;
 
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
-////import androidx.room.Insert;
-////import androidx.room.OnConflictStrategy;
-////import androidx.room.Query;
+import java.util.List;
+
 
 @Dao
 public interface ItemDao {
@@ -14,8 +16,14 @@ public interface ItemDao {
     @Insert
     void insert(Item item);
 
-    @Query("SELECT * FROM items_table WHERE item_id = :id")
-    Item ViewItem(int id);
+    @Update
+    void update(Item item);
+
+    @Delete
+    void delete(Item item);
+
+    @Query("SELECT * FROM items_table")
+    LiveData<List<Item>> getAll();
 
 
 //    @Update

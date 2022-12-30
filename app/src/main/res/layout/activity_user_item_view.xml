@@ -162,7 +162,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/txtOwner" />
 
                 <TextView
-                    android:id="@+id/Owner"
+                    android:id="@+id/itemOwner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -175,7 +175,7 @@
                     app:layout_constraintTop_toTopOf="@+id/txtOwner" />
 
                 <TextView
-                    android:id="@+id/quantity"
+                    android:id="@+id/itemQuantity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -188,7 +188,7 @@
                     app:layout_constraintTop_toTopOf="@+id/txtQuantity" />
 
                 <TextView
-                    android:id="@+id/category"
+                    android:id="@+id/itemCategory"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
