@@ -38,6 +38,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.myViewHolder> 
         holder.description.setText(item.getItemDescription());
         holder.category.setText(item.getItemCategory());
         holder.quantity.setText(item.getItemQuantity()+"");
+        holder.itemId = item.getItemId();
     }
 
     @Override
@@ -48,6 +49,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.myViewHolder> 
     public class myViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView name, description, category, quantity;
+        public int itemId;
 
         ItemAdapter adapter;
 
@@ -63,8 +65,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.myViewHolder> 
 
         @Override
         public void onClick(View view) {
-            System.out.println("clicked");
+            System.out.println("clicked " + itemId);
             Intent categoryIntent = new Intent(view.getContext(), RequestActivity.class);
+            categoryIntent.putExtra("ID", itemId);
             view.getContext().startActivity(categoryIntent);
         }
     }
