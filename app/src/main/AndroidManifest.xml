@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GivitApp">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB7E_cttEwtssMQXucQzxxdwyxPS6Tq6Gs"></meta-data>
         <activity
             android:name=".MapActivity"
             android:exported="false">
