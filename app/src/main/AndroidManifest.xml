@@ -23,27 +23,12 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".AuthenticationActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Chat2Activity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
+        <activity android:name=".chat.AuthenticationActivity"
+            android:exported="true"
+
+       <activity android:name=".chat.ChatActivity"
+           android:exported="false"
         <activity
             android:name=".Home2Activity"
             android:exported="false" />
