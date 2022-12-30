@@ -25,6 +25,9 @@ public interface ItemDao {
     @Query("SELECT * FROM items_table")
     LiveData<List<Item>> getAll();
 
+    @Query("SELECT * FROM items_table WHERE item_category == :category")
+    LiveData<List<Item>> getAll(String category);
+
 
 //    @Update
 //    public void updateWords(Word... words);

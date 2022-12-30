@@ -5,7 +5,6 @@
     android:layout_marginLeft="16dp"
     android:layout_marginTop="16dp"
     android:layout_marginRight="16dp"
-    android:layout_marginBottom="16dp"
     android:background="@color/primary_light"
     android:orientation="horizontal">
 
@@ -28,24 +27,30 @@
             android:id="@+id/txt_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Item Name" />
+            android:fontFamily="@font/nunito_bold"
+            android:hint="Item Name"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/txt_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
             android:hint="Item Description" />
 
         <TextView
             android:id="@+id/txt_category"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
             android:hint="Item Category" />
 
         <TextView
             android:id="@+id/txt_quantity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
             android:hint="Item Quantity" />
 
     </LinearLayout>

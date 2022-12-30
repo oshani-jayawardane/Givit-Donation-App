@@ -18,6 +18,7 @@ import com.example.givitapp.items.ItemDataBase;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class CategoryActivity extends AppCompatActivity {
 
@@ -43,12 +44,13 @@ public class CategoryActivity extends AppCompatActivity {
         ItemDataBase itemDataBase = ItemDataBase.getItemDatabase(getApplicationContext());
         final ItemDao itemDao = itemDataBase.itemDao();
 
-        itemDao.getAll().observe(this, items -> {
-            for ( Item I : items ) {
-                System.out.println(I.getItemName());
-                System.out.println(I.getItemDescription());
-            }
+        String category_name = getIntent().getStringExtra("category_name").toLowerCase(Locale.ROOT);
 
+        itemDao.getAll(category_name).observe(this, items -> {
+//            for ( Item I : items ) {
+//                System.out.println(I.getItemName());
+//                System.out.println(I.getItemDescription());
+//            }
 
             itemAdapter = new ItemAdapter(items);
             itemRv.setAdapter(itemAdapter);
@@ -65,9 +67,9 @@ public class CategoryActivity extends AppCompatActivity {
 //            }
 //        });
 
-        //Identify the text view
-//        TextView categoryName = findViewById(R.id.nameCategory);
-//        categoryName.setText(getIntent().getStringExtra("category_name"));
+//        Identify the text view
+        TextView categoryName = findViewById(R.id.nameCategory);
+        categoryName.setText(getIntent().getStringExtra("category_name"));
 
     }
 }
