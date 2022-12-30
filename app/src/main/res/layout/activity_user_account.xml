@@ -95,28 +95,16 @@
             android:id="@+id/btnTakepic"
             android:layout_width="85dp"
             android:layout_height="44dp"
-            android:text="take"
             android:onClick="takePicture"
+            android:text="Snap"
+            app:backgroundTint="#FB9036"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.117"
             app:layout_constraintStart_toEndOf="@+id/userImage"
-            app:layout_constraintTop_toBottomOf="@+id/textView12"
 
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
             app:layout_constraintVertical_bias="0.379" />
-
-        <Button
-            android:id="@+id/btnSave"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="save"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.441"
-            app:layout_constraintStart_toEndOf="@+id/btnTakepic"
-            app:layout_constraintTop_toBottomOf="@+id/textView12"
-            app:layout_constraintVertical_bias="0.421" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -151,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="240dp"
+        android:layout_marginEnd="120dp"
         android:text="TextView"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -163,7 +151,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginEnd="112dp"
         android:text="TextView"
         android:textColor="#000000"
         android:textSize="20sp"
@@ -197,19 +185,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnUploadItems" />
-
-    <Button
-        android:id="@+id/btnEditContact"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:backgroundTint="#FFB77B"
-        android:text="Edit Contact Details"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMyUploads" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

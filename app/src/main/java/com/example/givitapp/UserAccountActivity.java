@@ -32,7 +32,6 @@ public class UserAccountActivity extends AppCompatActivity {
         userNumber = findViewById(R.id.profileNumber);
         imageView = findViewById(R.id.userImage);
         takePic=findViewById(R.id.btnTakepic);
-        savePic = findViewById(R.id.btnSave);
         bmpImage = null;
         uploadItemBtn = findViewById(R.id.btnUploadItems);
         myUploadsBtn = findViewById(R.id.btnMyUploads);
