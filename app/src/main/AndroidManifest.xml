@@ -25,10 +25,10 @@
         </activity>
 
         <activity android:name=".chat.AuthenticationActivity"
-            android:exported="true"
+            android:exported="true"/>
 
        <activity android:name=".chat.ChatActivity"
-           android:exported="false"
+           android:exported="false"/>
         <activity
             android:name=".Home2Activity"
             android:exported="false" />
