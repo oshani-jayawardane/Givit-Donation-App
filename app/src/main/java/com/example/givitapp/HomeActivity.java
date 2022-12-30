@@ -86,19 +86,19 @@ public class HomeActivity extends AppCompatActivity {
 
 
         //Account set on clicklistener
-//        btnAcc.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent accountIntent = new Intent(getApplicationContext(), Profile.class);
-//                accountIntent.putExtra("namekey", name);
-//                accountIntent.putExtra("emailkey", email);
-//                accountIntent.putExtra("numberkey", number);
-//                Bundle bundle = new Bundle();
-//                bundle.putSerializable("userkey", user);
-//                accountIntent.putExtras(bundle);
-//                startActivity(accountIntent);
-//            }
-//        });
+        btnAcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent accountIntent = new Intent(getApplicationContext(), UserAccountActivity.class);
+                accountIntent.putExtra("namekey", name);
+                accountIntent.putExtra("emailkey", email);
+                accountIntent.putExtra("numberkey", number);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("userkey", user);
+                accountIntent.putExtras(bundle);
+                startActivity(accountIntent);
+            }
+        });
 
 
     }
