@@ -58,11 +58,14 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.myViewHolder> 
             category = itemView.findViewById(R.id.txt_category);
             quantity = itemView.findViewById(R.id.txt_quantity);
             this.adapter = itemAdapter;
+            itemView.findViewById(R.id.input_wrapper).setOnClickListener(this);
         }
 
         @Override
         public void onClick(View view) {
-
+            System.out.println("clicked");
+            Intent categoryIntent = new Intent(view.getContext(), RequestActivity.class);
+            view.getContext().startActivity(categoryIntent);
         }
     }
 }
