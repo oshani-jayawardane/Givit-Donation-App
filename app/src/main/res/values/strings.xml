@@ -36,5 +36,7 @@
     <string name="password_hint">Enter Password</string>
     <string name="givit">GIVIT</string>
     <string name="thank_you_for_being_a_generous_giver">thank you for being a generous giver</string>
+    <string name="type_something">Type Something</string>
+    <string name="todo">TODO</string>
 
 </resources>
