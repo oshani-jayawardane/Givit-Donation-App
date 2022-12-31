@@ -9,6 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GivitApp">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB7E_cttEwtssMQXucQzxxdwyxPS6Tq6Gs"></meta-data>
+        <activity
+            android:name=".MapActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MyUploadActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <activity android:name=".chat.AuthenticationActivity"
+            android:exported="true"/>
+
+       <activity android:name=".chat.ChatActivity"
+           android:exported="false"/>
         <activity
             android:name=".MyUploadsActivity"
             android:exported="false" />
