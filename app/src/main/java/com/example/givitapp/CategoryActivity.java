@@ -37,6 +37,10 @@ public class CategoryActivity extends AppCompatActivity {
             actionBar.hide();
         }
 
+        // update category name dynamically
+        TextView categoryName = findViewById(R.id.nameCategory);
+        categoryName.setText(getIntent().getStringExtra("category_name"));
+
         itemRv = findViewById(R.id.list_view_layout);
         itemRv.setLayoutManager(new LinearLayoutManager(CategoryActivity.this));
 
@@ -67,9 +71,6 @@ public class CategoryActivity extends AppCompatActivity {
 //            }
 //        });
 
-//        Identify the text view
-        TextView categoryName = findViewById(R.id.nameCategory);
-        categoryName.setText(getIntent().getStringExtra("category_name"));
 
     }
 }
